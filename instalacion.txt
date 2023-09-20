@@ -1,0 +1,19 @@
+python3 -m venv venv	(Instalar pyton en un entorno virtual llamado venv)
+venv\Scripts\activate	(Activar el entorno virtual)
+Pipi install fastapi uvicorn	
+Code .	Me abre visual studio code en ese directorio
+Control+shit+p 	Python select interprete (Python 3… venv/ // /)
+---------------------------------------------------------------------
+Main.py	from fastapi import FastAPI
+
+app=FastAPI()
+
+@app.get('/')
+
+def message():
+    return "hello wold"
+
+----------------------------------------------------------------------------
+uvicorn main:app	Para correr la aplicación
+uvicorn main:app –port 5000	Para correrla en otro puerto
+uvicorn main:app --port 5000 --reload	Para que se recargue la pagina cuando hagamos cambios

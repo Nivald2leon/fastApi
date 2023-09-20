@@ -1,0 +1,11 @@
+para delplgar la aplicacion en AWS
+
+crear fichero gitignore:
+venv/
+__pycache__/
+
+pip freeze > requierements.txt
+
+creo repositorio "fastapi"
+git init
+git add .
