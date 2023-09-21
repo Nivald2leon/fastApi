@@ -6,6 +6,80 @@ __pycache__/
 
 pip freeze > requierements.txt
 
-creo repositorio "fastapi"
+creo repositorio "flastapi.git"
 git init
 git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Nivald2leon/flastapi.git
+git push -u origin main
+
+https://signin.aws.amazon.com/
+Nivald2leon@mail.com
+https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Instances:v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false;sort=tag:Name
+
+Servicio EC2
+Instancias
+lanzar Instancias
+nombre:app-flastapi
+clave:key-app-flastapi
+me descarga: key-app-flastapi.pem
+lanzar Instancias
+ver todas las Instancias
+le damos clic al id
+despues a conect
+cliente SSH
+nos devuelve este ejemplo:  ssh -i "key-app-flastapi.pem" ubuntu@ec2-3-129-253-144.us-east-2.compute.amazonaws.com
+
+ejecuto Mobaxterm
+con esta informacion actibo el Servicio
+remote host:  ec2-3-129-253-144.us-east-2.compute.amazonaws.com
+especifity usename: ubuntu
+Advanced ssh setting
+user private kit y cargo el fichero :key-app-flastapi.pem
+me abre una consola con el promp
+ubuntu@ip-172-31-9-210:~$
+
+sudo apt-get update
+python3 --version
+y me devuelve la version
+
+git clone https://github.com/Nivald2leon/flastapi.git
+
+ls o dir
+y ya puedo ver a carpeta raiz del proyecto resend-nextjs-app-router-example
+
+cd flastapi
+nodejs--version me dice que no esta instalado y me da el comando para instalarlo
+sudo apt install nodejs
+
+npm --version me dice que no esta instalado y me da el comando para instalarlo
+sudo apt install npm
+sudo npm install pm2@latest -g
+pm2 list y me dice la tabla que no tengo ningun servico corriendo
+sudo apt install python3.10-venv
+python3 -m venv venv 
+source venv/bin/activate
+
+pip install -r requierements.txt
+
+uvicorn main:app --host 0.0.0.0  (con esto ya corre la acplicacion)
+
+ctrl+c  para detenerla paar ejecutarla con el ambiente virtual pm2
+
+ pm2 start "uvicorn main:app --host 0.0.0.0" --name app-flastapi
+
+ voy a la pagina de AWS
+
+ intancias => id  => seguridad => enlase de grupos de seguridad
+ => Editar reglas de entrada => add rule 
+ port:8000  => 0.0.0.0/0
+ guardar cambios
+
+ copio la Dirección IPv4 pública (direccion abierta)
+ 3.129.253.144
+ y la pego en el navegador
+
+
+
+
